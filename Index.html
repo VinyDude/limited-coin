@@ -193,31 +193,30 @@ function addv(){
 		document.getElementById("v").innerHTML = "Vincent: " + mo[0];
 }
 function addl(){
-		leon++
-		document.getElementById("l").innerHTML = "Leon: " + leon;
+		mo[1]++
+		document.getElementById("l").innerHTML = "Leon: " + mo[1];
 }
 function addo(){
-		olivia++
-		document.getElementById("o").innerHTML = "Olivia: " + olivia;
+		mo[2]++
+		document.getElementById("o").innerHTML = "Olivia: " + mo[2];
 	}
 function subv(){
-		vincent--
-		document.getElementById("v").innerHTML = "Vincent: " + vincent;
+		mo[0]--
+		document.getElementById("v").innerHTML = "Vincent: " + mo[0];
 }
 function subl(){
-		leon--
-		document.getElementById("l").innerHTML = "Leon: " + leon;
+		mo[1]--
+		document.getElementById("l").innerHTML = "Leon: " + mo[1];
 }
 function subo(){
-		olivia--
-		document.getElementById("o").innerHTML = "Olivia: " + olivia;
+		mo[2]--
+		document.getElementById("o").innerHTML = "Olivia: " + mo[2];
 	}
 
 function yeet(){
-var v =parseInt(mo[0])
-document.getElementById("v").innerHTML = "Vincent: "+v;
-document.getElementById("l").innerHTML = "Leon: "+l;
-document.getElementById("o").innerHTML = "Olivia: "+o;
+document.getElementById("v").innerHTML = "Vincent: "+mo[0];
+document.getElementById("l").innerHTML = "Leon: "+mo[1];
+document.getElementById("o").innerHTML = "Olivia: "+mo[2];
 document.getElementById("you").style.visibility = "hidden"
 }
 </script>
