@@ -144,11 +144,11 @@ function drawChart() {
   var chart = new google.visualization.LineChart(document.getElementById('chart'));
   chart.draw(data, options);
 }
-
+const mo =[];
 const url = "file.txt"
 fetch(url)
    .then( r => r.text() )
-   .then( t => const mo = t.split(" ", 3); )
+   .then( t => mo = t.split(" ", 3); )
 
 vincent=mo[1];
 leon=mo[2];
