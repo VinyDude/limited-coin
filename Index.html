@@ -118,6 +118,11 @@ fetch(url)
 vincent=mo[1];
 leon=mo[2];
 olivia=mo[3];	
+	
+const mo = text.split(" ", 3);
+document.getElementById("v").innerHTML = "Vincent: " + vincent;
+document.getElementById("l").innerHTML = "Leon: " + leon;
+document.getElementById("o").innerHTML = "Olivia: " + olivia;
 
 	
 	
@@ -209,13 +214,7 @@ function subo(){
 		document.getElementById("o").innerHTML = "Olivia: " + olivia;
 	}
 
-	
-function pro(money){
-	const mo = text.split(" ", 3);
-	document.getElementById("v").innerHTML = "Vincent: " + vincent;
-	document.getElementById("l").innerHTML = "Leon: " + leon;
-	document.getElementById("o").innerHTML = "Olivia: " + olivia;
-}
+
 
 
 </script>
