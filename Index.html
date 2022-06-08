@@ -189,8 +189,8 @@ document.getElementById("72").onclick = function() {subl()};
 document.getElementById("73").onclick = function() {subo()};
 
 function addv(){
-		vincent++
-		document.getElementById("v").innerHTML = "Vincent: " + vincent;
+		v++
+		document.getElementById("v").innerHTML = "Vincent: " + v;
 }
 function addl(){
 		leon++
@@ -214,9 +214,10 @@ function subo(){
 	}
 
 function yeet(){
-document.getElementById("v").innerHTML = "Vincent: "+mo[0];
-document.getElementById("l").innerHTML = "Leon: "+mo[1];
-document.getElementById("o").innerHTML = "Olivia: "+mo[2]
+var v =parseInt(mo[0])
+document.getElementById("v").innerHTML = "Vincent: "+v;
+document.getElementById("l").innerHTML = "Leon: "+l;
+document.getElementById("o").innerHTML = "Olivia: "+o;
 document.getElementById("you").style.visibility = "hidden"
 }
 </script>
