@@ -110,19 +110,7 @@
 
 <script type="text/javascript">
 	// Load google charts
-const url = "file.txt"
-fetch(url)
-   .then( r => r.text() )
-   .then( t => pro(t) )
 
-vincent=mo[1];
-leon=mo[2];
-olivia=mo[3];	
-	
-const mo = text.split(" ", 3);
-document.getElementById("v").innerHTML = "Vincent: " + vincent;
-document.getElementById("l").innerHTML = "Leon: " + leon;
-document.getElementById("o").innerHTML = "Olivia: " + olivia;
 
 	
 	
@@ -157,7 +145,19 @@ function drawChart() {
   chart.draw(data, options);
 }
 
+const url = "file.txt"
+fetch(url)
+   .then( r => r.text() )
+   .then( t => const mo = t.split(" ", 3); )
 
+vincent=mo[1];
+leon=mo[2];
+olivia=mo[3];	
+	
+
+document.getElementById("v").innerHTML = "Vincent: " + vincent;
+document.getElementById("l").innerHTML = "Leon: " + leon;
+document.getElementById("o").innerHTML = "Olivia: " + olivia;
 document.getElementById("v").innerHTML = "Vincent: " + vincent;
 document.getElementById("l").innerHTML = "Leon: " + leon;
 document.getElementById("o").innerHTML = "Olivia: " + olivia;
