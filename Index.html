@@ -140,9 +140,7 @@ function drawChart() {
   var chart = new google.visualization.LineChart(document.getElementById('chart'));
   chart.draw(data, options);
 }
-var vincent = 10;
-var leon =10;
-var olivia = 10;
+
 
 document.getElementById("v").innerHTML = "Vincent: " + vincent;
 document.getElementById("l").innerHTML = "Leon: " + leon;
@@ -202,7 +200,14 @@ function subo(){
 const url = "file.txt"
 fetch(url)
    .then( r => r.text() )
-   .then( t => console.log(t) )
+   .then( t => pro(t) )
+	
+function pro(money){
+	const mo = text.split(" ", 3);
+	document.getElementById("v").innerHTML = "Vincent: " + mo[1];
+	document.getElementById("l").innerHTML = "Leon: " + mo[2];
+	document.getElementById("o").innerHTML = "Olivia: " + mo[3];
+}
 
 
 </script>
