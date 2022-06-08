@@ -153,16 +153,13 @@ function pro(money){
 	mo = money.split(" ", 3);	
 }
 	
-var vincent = mo;
-var leon=parseInt(mo[1]);
-var olivia=parseInt(mo[2]);	
+var vincent=mo[0];
+var leon=mo[1];
+var olivia=mo[2];	
 
 console.log(vincent);
 
-document.getElementById("v").innerHTML = "Vincent: " + vincent;
-document.getElementById("l").innerHTML = "Leon: " + leon;
-document.getElementById("o").innerHTML = "Olivia: " + olivia;
-document.getElementById("v").innerHTML = "Vincent: " + vincent;
+document.getElementById("v").innerHTML = "Vincent: ",  vincent;
 document.getElementById("l").innerHTML = "Leon: " + leon;
 document.getElementById("o").innerHTML = "Olivia: " + olivia;
 
