@@ -199,13 +199,10 @@ function subo(){
 		olivia--
 		document.getElementById("o").innerHTML = "Olivia: " + olivia;
 	}
+const url = "http://www.puzzlers.org/pub/wordlists/pocket.txt"
+fetch(url)
+   .then( r => r.text() )
+   .then( t => console.log(r) )
 
-fetch("file.txt")
-	.then((response) => {
-  		return response.text();
-	})
-	.then((text) => {
-  		console.log(text);
-	});
 
 </script>
