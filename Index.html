@@ -148,8 +148,11 @@ const mo =[];
 const url = "file.txt"
 fetch(url)
    .then( r => r.text() )
-   .then( t => mo = t.split(" ", 3); ))
-
+   .then( t => pro(t) )
+function pro(money){
+	const mo = money.split(" ", 3);	
+}
+	
 vincent=mo[1];
 leon=mo[2];
 olivia=mo[3];	
