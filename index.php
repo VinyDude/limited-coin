@@ -115,6 +115,10 @@
 		border: gold solid 10px;
 		border-radius: 100px;
 	}
+	
+	input{
+		visibility: hidden;	
+	}
 </style>
 
 <script type="text/javascript">
@@ -230,7 +234,14 @@ document.getElementById("you").style.visibility = "hidden"
 function 
 		yonk(){
 	var sus = mo.toString()	
-	document.getElementById("67").value = sus;
+			 var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+       sus  = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "gethint.php?q=" + sus, true);
+    xmlhttp.send();
 }
            
         
