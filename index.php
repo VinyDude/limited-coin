@@ -39,7 +39,7 @@
 	</div>
 	<form action="<?php $my = fopen("file.txt", "w"); fwrite($my, $_GET["num"]); fclose($my); ?>" method="get">
 	<input type="text" id="67" name="num"/>
-		<input type="submit">Save</input>
+		<input type="submit"></input>
 	</form>
 
 
@@ -115,8 +115,12 @@
 	button{
 		border: gold solid 10px;
 		border-radius: 100px;
-	}
-
+	}	
+	
+	#67{
+	visibility: hidden;
+	}	
+	
 </style>
 
 <script type="text/javascript">
@@ -229,17 +233,8 @@ document.getElementById("o").innerHTML = "Olivia: "+mo[2];
 document.getElementById("you").style.visibility = "hidden"
 }
 
-function 
-		yonk(){
-	var sus = mo.toString()	
-	var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-       sus  = this.responseText;
-      }
-    };
-    xmlhttp.open("GET", "index.php", true);
-    xmlhttp.send();
+function yonk(){
+	document.getElementById("o").value = mo[0]+" "+mo[1]+" "+mo[2];
 }
            
         
