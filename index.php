@@ -237,7 +237,7 @@ function
        sus  = this.responseText;
       }
     };
-    xmlhttp.open("GET", "gethint.php?q=" + sus, true);
+    xmlhttp.open("GET", "q=" + sus, true);
     xmlhttp.send();
 }
            
