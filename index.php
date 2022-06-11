@@ -231,13 +231,13 @@ document.getElementById("you").style.visibility = "hidden"
 function 
 		yonk(){
 	var sus = mo.toString()	
-			 var xmlhttp = new XMLHttpRequest();
+	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
        sus  = this.responseText;
       }
     };
-    xmlhttp.open("GET", "q=" + sus, true);
+    xmlhttp.open("GET", "" +, true);
     xmlhttp.send();
 }
            
