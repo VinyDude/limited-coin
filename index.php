@@ -117,7 +117,7 @@
 		border-radius: 100px;
 	}	
 	
-	#67{
+	input#67{
 	visibility: hidden;
 	}	
 	
@@ -234,7 +234,7 @@ document.getElementById("you").style.visibility = "hidden"
 }
 
 function yonk(){
-	document.getElementById("o").value = mo[0]+" "+mo[1]+" "+mo[2];
+	document.getElementById("67").value = mo[0]+" "+mo[1]+" "+mo[2];
 }
            
         
