@@ -38,7 +38,7 @@
 		<p>Olivia</p> <button id="7">+</button> <button id="73">-</button>
 	</div>
 	
-	
+	<input type="text" id="67"/>
 	
 
 
