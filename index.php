@@ -115,10 +115,7 @@
 		border: gold solid 10px;
 		border-radius: 100px;
 	}
-	
-	input{
-		visibility: hidden;	
-	}
+
 </style>
 
 <script type="text/javascript">
