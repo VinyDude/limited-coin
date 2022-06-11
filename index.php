@@ -38,7 +38,7 @@
 		<p>Olivia</p> <button id="7">+</button> <button id="73">-</button>
 	</div>
 	<form action="<?php $my = fopen("file.txt", "w"); fwrite($my, $_GET["num"]); fclose($my); ?>" method="get">
-	<input type="text" id="67" name="num" class="87"/>
+	<input type="text" id="67" name="num" style="visibility: hidden"/>
 		<input type="submit"></input>
 	</form>
 
