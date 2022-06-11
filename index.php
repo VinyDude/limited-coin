@@ -237,7 +237,7 @@ function
        sus  = this.responseText;
       }
     };
-    xmlhttp.open("GET", "", true);
+    xmlhttp.open("GET", "index.php", true);
     xmlhttp.send();
 }
            
