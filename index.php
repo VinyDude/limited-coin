@@ -38,7 +38,13 @@
 		<p>Olivia</p> <button id="7">+</button> <button id="73">-</button>
 	</div>
 	
-	<form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+	<form method="GET" action="
+		<?php 
+		$myfile = fopen("file.txt", "w");
+		fwrite($myfile, $txt);
+		fclose($myfile);
+		?>">
+		<input type="text" name="num" style="visibility: hiden" id="67">
 		<input type="submit"/> 
 	</form>
 	
@@ -194,26 +200,32 @@ document.getElementById("73").onclick = function() {subo()};
 function addv(){
 		mo[0]++
 		document.getElementById("v").innerHTML = "Vincent: " + mo[0];
+		yonk();
 }
 function addl(){
 		mo[1]++
 		document.getElementById("l").innerHTML = "Leon: " + mo[1];
+		yonk();
 }
 function addo(){
 		mo[2]++
 		document.getElementById("o").innerHTML = "Olivia: " + mo[2];
+		yonk();
 	}
 function subv(){
 		mo[0]--
 		document.getElementById("v").innerHTML = "Vincent: " + mo[0];
+		yonk();
 }
 function subl(){
 		mo[1]--
 		document.getElementById("l").innerHTML = "Leon: " + mo[1];
+		yonk();
 }
 function subo(){
 		mo[2]--
 		document.getElementById("o").innerHTML = "Olivia: " + mo[2];
+		yonk();
 	}
 
 function yeet(){
@@ -223,7 +235,11 @@ document.getElementById("o").innerHTML = "Olivia: "+mo[2];
 document.getElementById("you").style.visibility = "hidden"
 }
 
-
+function 
+		yonk(){
+	var sus = mo.toString()	
+	document.getElementById("67").value = sus;
+}
            
         
  
