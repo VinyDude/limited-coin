@@ -38,7 +38,7 @@
 		<p>Olivia</p> <button id="7">+</button> <button id="73">-</button>
 	</div>
 	
-	<form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+	<form method="GET" action="<?php echo"hi" ?>"> 
 		<input type="submit"/> 
 	</form>
 	
