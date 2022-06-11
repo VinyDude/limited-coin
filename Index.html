@@ -4,6 +4,7 @@
 	<head>
 		<title>Limited Coin &#8750</title>
 		<link rel="icon" href="">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<div class="y">
 		<h1>Limited Coin &#8750</h1>
@@ -115,8 +116,6 @@
 </style>
 
 <script type="text/javascript">
-	// Load google charts
-
 
 	
 	
@@ -219,14 +218,14 @@ document.getElementById("l").innerHTML = "Leon: "+mo[1];
 document.getElementById("o").innerHTML = "Olivia: "+mo[2];
 document.getElementById("you").style.visibility = "hidden"
 }
-    function passVal(){
-        var data = {
-             "filename",
-             "this_is_a_dummy_test_string"
-        };
 
-        $.post("index.php", data);
-    }
-    passVal();	
+$.ajax({
+        type: "GET",
+        url: '/save.php',
+        data: { str : "str" }
+}); 
+           
+        
+ 
 
 </script>
