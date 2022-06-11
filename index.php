@@ -38,15 +38,7 @@
 		<p>Olivia</p> <button id="7">+</button> <button id="73">-</button>
 	</div>
 	
-	<form method="GET" action="
-		<?php 
-		$myfile = fopen("file.txt", "w");
-		fwrite($myfile, $txt);
-		fclose($myfile);
-		?>">
-		<input type="text" name="num" style="visibility: hiden" id="67">
-		<input type="submit"/> 
-	</form>
+
 	
 
 
