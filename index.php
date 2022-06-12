@@ -40,7 +40,7 @@
 	</div>
 	<form action="<?php $my = fopen("file.txt", "w"); fwrite($my, $_POST["num"]); fclose($my);?>" method="post">
 	<input type="text" id="67" name="num" style="visibility: hidden"/>
-		<input type="submit"></input>
+		<input type="submit" id="ym"></input>
 	</form>
 
 
@@ -171,6 +171,8 @@ function pro(money){
 
 document.getElementById("d").onclick = function() {password()};
 
+document.getElementById("ym").onclick = function() {yonk()};
+	
 function password(){
 	document.getElementById("s").style.visibility = "inherit";
 }
@@ -199,32 +201,26 @@ document.getElementById("73").onclick = function() {subo()};
 function addv(){
 		mo[0]++
 		document.getElementById("v").innerHTML = "Vincent: " + mo[0];
-		yonk();
 }
 function addl(){
 		mo[1]++
 		document.getElementById("l").innerHTML = "Leon: " + mo[1];
-		yonk();
 }
 function addo(){
 		mo[2]++
 		document.getElementById("o").innerHTML = "Olivia: " + mo[2];
-		yonk();
 	}
 function subv(){
 		mo[0]--
 		document.getElementById("v").innerHTML = "Vincent: " + mo[0];
-		yonk();
 }
 function subl(){
 		mo[1]--
 		document.getElementById("l").innerHTML = "Leon: " + mo[1];
-		yonk();
 }
 function subo(){
 		mo[2]--
 		document.getElementById("o").innerHTML = "Olivia: " + mo[2];
-		yonk();
 	}
 
 function yeet(){
