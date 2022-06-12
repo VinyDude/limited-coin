@@ -1,3 +1,5 @@
+<?php $my = fopen("filen.txt", "w"); fwrite(fread(fopen("file.txt"),filesize("file.txt"))); fclose($my);?>
+
 <html>
 
 <body>
@@ -158,7 +160,7 @@ function drawChart() {
   chart.draw(data, options);
 }
 var mo =[];
-const url = "file.txt"
+const url = "filen.txt"
 fetch(url)
    .then( r => r.text() )
    .then( t => pro(t) )
