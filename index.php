@@ -37,9 +37,8 @@
 		<p>Leon</p> <button id="8">+</button> <button id="72">-</button>
 		<p>Olivia</p> <button id="7">+</button> <button id="73">-</button>
 	</div>
-	<form action="<?php $my = fopen("file.txt", "w"); fwrite($my, $_POST["num"]); fclose($my); $myn = fopen("filen.txt", "w"); fwrite($my, $_POST["numn"]); fclose($my); ?>" method="post">
+	<form action="<?php $my = fopen("file.txt", "w"); fwrite($my, $_POST["num"]); fclose($my);?>" method="post">
 	<input type="text" id="67" name="num" style="visibility: hidden"/>
-	<input type="text" id="68" name="numn" style="visibility: hidden"/>
 		<input type="submit"></input>
 	</form>
 
@@ -159,7 +158,7 @@ function drawChart() {
   chart.draw(data, options);
 }
 var mo =[];
-const url = "filen.txt"
+const url = "file.txt"
 fetch(url)
    .then( r => r.text() )
    .then( t => pro(t) )
@@ -236,7 +235,7 @@ document.getElementById("you").style.visibility = "hidden"
 
 function yonk(){
 	document.getElementById("67").value = mo[0]+" "+mo[1]+" "+mo[2];
-	document.getElementById("68").value = mo[0]+" "+mo[1]+" "+mo[2];
+	
 }
            
         
