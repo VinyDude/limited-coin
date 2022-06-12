@@ -123,7 +123,7 @@
 	}	
 	
 </style>
-<?php $my = fopen("filen.txt", "w"); $n = fopen("file.txt"); $o = fread("n"); fwrite($0, filesize("file.txt")); fclose($my);?>
+
 <script type="text/javascript">
 
 	
