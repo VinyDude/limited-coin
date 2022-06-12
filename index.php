@@ -159,7 +159,7 @@ function drawChart() {
   chart.draw(data, options);
 }
 var mo =[];
-const url = "filen.txt"
+const url = "file.txt"
 fetch(url)
    .then( r => r.text() )
    .then( t => pro(t) )
